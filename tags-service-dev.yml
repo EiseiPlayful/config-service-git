@@ -1,0 +1,17 @@
+spring:
+  zipkin: 
+    base-url: http://zipkin-server:8080/
+    
+  sleuth:
+    sampler:
+      percentage: 1.0 #registra 100% de peticiones
+     
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
